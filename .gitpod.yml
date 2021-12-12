@@ -1,8 +1,9 @@
 tasks:
   - name: Tarminal 1
   - init: |
-          npm i -g @angular/cli &&
-          cd ./vitrine/ npm install &&
+          npm i -g @angular/cli
+          cd ./vitrine/
+          npm install
           ng serve -o
 ports:
   - port: 4200
