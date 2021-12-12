@@ -1,0 +1,10 @@
+tasks:
+  - name: Tarminal 1
+  - before: npm i -g @angular/cli
+  - init: cd ./vitrine/
+  - command: npm install
+  - name: Terminal 2
+  - command: ng serve -o
+ports:
+  - port: 4200
+    onOpen: open-preview
