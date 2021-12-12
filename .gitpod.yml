@@ -4,6 +4,7 @@ tasks:
   - init: cd ./vitrine/
   - command: npm install
   - name: Terminal 2
+  - before: cd ./vitrine/
   - command: ng serve -o
 ports:
   - port: 4200
