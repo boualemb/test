@@ -7,14 +7,13 @@ import { environment } from '../environments/environment';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  
-
   title = 'Formation JS';
   patients:{"nom":string, "prenom":string}[] = [];
 
   ngOnInit(): void {
       this.logIn();
     }
+  
   async logIn(){
     const app = new Realm.App({id:environment.projectID});
     const credentials = Realm.Credentials.anonymous();
