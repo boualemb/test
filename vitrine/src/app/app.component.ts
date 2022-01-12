@@ -17,6 +17,7 @@ export class AppComponent implements OnInit{
   async logIn(){
     const app = new Realm.App({id:environment.projectID});
     const credentials = Realm.Credentials.anonymous();
+    
     try {
       const user: Realm.User = await app.logIn(credentials);
       console.log(user);
